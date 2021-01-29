@@ -33,7 +33,8 @@ Unique file types: 8
             .go:      5 [    2.8 kB]
           .pack:      1 [    1.6 kB]
            .idx:      1 [    1.2 kB]
-            .md:      1 [     915 B]
+            .md:      1 [     891 B]
      .gitignore:      1 [     278 B]
            .sum:      1 [     177 B]
+           .mod:      1 [      98 B]
 ```

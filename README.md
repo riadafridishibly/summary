@@ -12,7 +12,7 @@ Controllable with flags
 
 Optimistic implementation!
 
-I'm mostly interested in file that has extension. In future I'll use mimetype to detect file type, for now it only handles extension and total size.
+I'm mostly interested in a file that has an extension. In the future, I'll use mime-type to detect file type, for now, it only handles extension and total size.
 
 ## How to run
 

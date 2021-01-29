@@ -37,6 +37,3 @@ Unique file types: 8
      .gitignore:      1 [     278 B]
            .sum:      1 [     177 B]
 ```
-=======
-```
->>>>>>> 062d1479a60c0dc6a8f96884615f73624792002d

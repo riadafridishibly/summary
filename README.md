@@ -12,7 +12,7 @@ Controllable with flags
 
 Optimistic implementation!
 
-I'm mostly interested in file that has extension. In future I'll use mimetype to detect file type, for now it only handles extension and total size.
+I'm mostly interested in a file that has an extension. In the future, I'll use mime-type to detect file type, for now, it only handles extension and total size.
 
 ## How to run
 
@@ -36,5 +36,7 @@ Unique file types: 8
             .md:      1 [     915 B]
      .gitignore:      1 [     278 B]
            .sum:      1 [     177 B]
-           .mod:      1 [      98 B]
 ```
+=======
+```
+>>>>>>> 062d1479a60c0dc6a8f96884615f73624792002d

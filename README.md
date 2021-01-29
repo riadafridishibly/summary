@@ -29,12 +29,12 @@ Unique file types: 8
 
       Extension  Count       Size
       ---------  -----       ----
-     .gitignore:      1 [     278 B]
-            .go:      2 [    2.0 kB]
-           .idx:      1 [    1.2 kB]
-            .md:      1 [     518 B]
-           .mod:      1 [      98 B]
-          .pack:      1 [    1.6 kB]
         .sample:     13 [     23 kB]
+            .go:      5 [    2.8 kB]
+          .pack:      1 [    1.6 kB]
+           .idx:      1 [    1.2 kB]
+            .md:      1 [     915 B]
+     .gitignore:      1 [     278 B]
            .sum:      1 [     177 B]
+           .mod:      1 [      98 B]
 ```

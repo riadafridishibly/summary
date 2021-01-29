@@ -17,12 +17,3 @@ type FileTypeInfo struct {
 func (ft FileTypeInfo) ToString() string {
 	return fmt.Sprintf("%15s: %6d [%10s]", ft.Ext, ft.Count, humanize.Bytes(uint64(ft.Size)))
 }
-
-// InitFileType initialize a fileType object
-func InitFileType(path string) *FileTypeInfo {
-	return &FileTypeInfo{
-		Ext:   GetExtension(path),
-		Count: 1,
-		Size:  GetSize(path),
-	}
-}

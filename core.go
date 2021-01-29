@@ -3,9 +3,6 @@ package main
 import (
 	"fmt"
 	"sort"
-	"strings"
-
-	"github.com/riadafridishibly/summary/walk"
 )
 
 // DataCollector holds a slice of FileTypeInfo
@@ -15,19 +12,7 @@ type DataCollector struct {
 
 // Populate populates the data into the DataCollector
 func (dc *DataCollector) Populate(path string) {
-	extToFileTypeInfo := make(map[string]*FileTypeInfo)
-	files := walk.GetAllFiles(path)
-	for _, file := range files {
-		ext := GetExtension(file)
-		if ext != "" {
-			if v, ok := extToFileTypeInfo[ext]; ok {
-				v.Count++
-				v.Size += GetSize(file)
-			} else {
-				extToFileTypeInfo[strings.ToLower(ext)] = InitFileType(file)
-			}
-		}
-	}
+	extToFileTypeInfo := GetAllFiles(path)
 	dc.ExtTypeInfo = make([]*FileTypeInfo, len(extToFileTypeInfo))
 	i := 0
 	for _, v := range extToFileTypeInfo {

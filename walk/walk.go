@@ -13,7 +13,9 @@ func GetAllFiles(root string) []string {
 		if err != nil {
 			return err
 		}
-		filePaths = append(filePaths, path)
+		if info.Mode().IsRegular() {
+			filePaths = append(filePaths, path)
+		}
 		return nil
 	})
 	return filePaths
